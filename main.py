@@ -2,7 +2,7 @@ import chess
 import random
 import sys
 
-def random_move(board, color):
+def random_move(board):
     candidate = board.fen()
     legal_moves = list(candidate.legal_moves)
     if legal_moves:
