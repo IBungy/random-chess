@@ -3,7 +3,7 @@ import random
 import sys
 
 def random_move(board):
-    candidate = board.fen()
+    candidate = board.copy()
     legal_moves = list(candidate.legal_moves)
     if legal_moves:
         return random.choice(legal_moves)
